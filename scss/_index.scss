@@ -1,0 +1,71 @@
+/* --------------------------------------------INDEX------------------------------------------------------ */
+.Index {
+    /* BODY */
+    background-color: $background-color;
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "carrusel carrusel carrusel carrusel"
+        "MainI MainI MainI MainI"
+        "footer footer footer footer"
+    ;
+
+    /* CARROUSEL */
+    .sectionCarrousel {
+        height: 1000px;
+        grid-area: carrusel;
+
+        #Carrusel {
+            height: 1000px;
+            width: 100%;
+            .fotoCarrusel {
+                width: 100%;
+
+            }
+        }
+
+
+    }
+/* MAIN */
+.MainIndex {
+    grid-area: MainI;
+    display: grid;
+    height: 1200px;
+    grid-template-areas:
+        "historia historia curiosidades curiosidades"
+        "historia historia curiosidades curiosidades";
+    justify-items: center;
+    align-items: center;
+
+    .MainTitles {
+        font-family: 'Bebas Neue', sans-serif;
+        color: $secondary-font-color;
+        font-size: 50px;
+        text-shadow: 0 0 2px black;
+    }
+
+    .Historia {
+        grid-area: historia;
+        width: 70%;
+        height: 80%;
+
+        .textoHistoria {
+            color: $font-text-color;
+        }
+
+    }
+
+    .Curiosidades {
+        grid-area: curiosidades;
+        height: 80%;
+        width: 70%;
+
+        .listaCuriosidades {
+            color: $font-text-color;
+            font-size: 16px;
+        }
+
+    }
+}
+}
+

@@ -1,0 +1,152 @@
+/*---------------------------------------------------------------------------------PAGES--------------------------------------------------------------- */
+/* BODY */
+.Pages {
+    background-color: $background-color;
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "mainl aside aside aside"
+        "Recitales Recitales Recitales Recitales"
+        "Albumes Albumes Albumes Albumes "
+        "footer footer footer footer"
+    ;
+}
+
+/* MAIN */
+
+.mainpages {
+    grid-area: mainl;
+    display: flex;
+    width: 550px;
+    height: 800px;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.TitlePages {
+    font-family: 'Bebas Neue', sans-serif;
+    color: $secondary-font-color;
+    font-size: 50px;
+    animation: backInLeft;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    text-shadow: 0 0 2px black;
+}
+
+.FotoPages {
+    width: 600px;
+    height: 600px;
+    animation: aparicionFotoPages;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    box-shadow: 0 0 15px black;
+}
+
+/* ASIDE */
+aside {
+    grid-area: aside;
+    margin-left: 40px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 1100px;
+    height: 520px;
+}
+
+.textoArtista {
+    color: $font-text-color;
+    font-size: 18px;
+    animation: backInRight;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+/* RECITALES */
+.SectionRecitales {
+    grid-area: Recitales;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+
+}
+
+.VideoYoutube {
+    width: 500px;
+    height: 300px;
+
+    &:hover {
+        transform: scale(1.04);
+        cursor: pointer;
+        color: red;
+    }
+
+    box-shadow:0 0 15px black;
+}
+
+.Recitales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.TitleRecitales {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-shadow: 0 0 2px black;
+}
+
+.TextoTitleRecitales {
+    font-family: 'Bebas Neue', sans-serif;
+    color: $secondary-font-color;
+    font-size: 60px;
+}
+
+/* ALBUMES */
+.SectionAlbumes {
+    grid-area: Albumes;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+
+.Albumes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+   
+}
+
+.TitleAlbumes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-shadow: 0 0 2px black;
+}
+
+.TextoTitleAlbumes {
+    font-family: 'Bebas Neue', sans-serif;
+    color: $secondary-font-color;
+    font-size: 60px;
+}
+
+.FotoAlbum {
+    width: 450px;
+    box-shadow: 0 0 15px black;
+    &:hover {
+        transform: scale(1.04);
+        cursor: pointer;
+    }
+}

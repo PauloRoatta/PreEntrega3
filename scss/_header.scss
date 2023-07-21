@@ -1,0 +1,64 @@
+/* HEADER */
+header {
+    grid-area: header;
+    /* NAVBAR */
+.titleRock {
+    font-size: 30px;
+    text-decoration: none;
+    color: $primary-font-color;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#links_navbarIni {
+    padding-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: $primary-font-color;
+    font-family: 'Bebas Neue', sans-serif;
+    &:hover{
+        transform:scale(1.2);
+       cursor:pointer;
+    }
+}
+.dropdown-item{
+    color: $primary-font-color;
+    &:hover{
+        color: black;
+        background-color: $primary-font-color;
+        transform: scale(1.1);
+    }
+    
+}
+
+#dropdown_rock {
+    margin-left: 30px;
+    
+}
+#links_navbarByA {
+    padding-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color:$primary-font-color;
+    font-family: 'Bebas Neue', sans-serif;
+    &:hover{
+        transform:scale(1.2);
+       cursor:pointer;
+    }
+}
+
+
+#searchButton_rock {
+    color: $primary-font-color;
+    font-size: 18px;
+    border-color: $primary-font-color;
+    font-family: 'Bebas Neue', sans-serif;
+    &:hover {
+        color: Black;
+        background-color: red;
+    
+    }
+}
+
+
+}
+

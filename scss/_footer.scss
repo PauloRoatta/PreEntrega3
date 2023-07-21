@@ -1,0 +1,37 @@
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color: rgb(43, 48, 53);
+    align-items: center;
+    height: 250px;
+    grid-area: footer;
+    .componente_footer {
+        width: 300px;
+    }
+    
+    .footerTitles {
+        font-family: 'Bebas Neue', sans-serif;
+        color: rgb(180, 26, 26);
+        font-size: 30px;
+      
+    }
+    
+    .textoContacto {
+        color: rgb(180, 26, 26);
+       
+    }
+    
+    .flechitaUp {
+        color: rgb(180, 26, 26);
+        svg{
+            &:hover{
+                transform: scale(1.2);
+            }
+    
+           }
+    }
+    
+}
+
